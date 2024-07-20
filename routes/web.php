@@ -3,5 +3,5 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect('backpack.dashboard');
+    return redirect()->route('backpack.dashboard');
 });
