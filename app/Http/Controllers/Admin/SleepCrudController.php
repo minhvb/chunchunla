@@ -72,9 +72,10 @@ class SleepCrudController extends CrudController
         CRUD::field('date')
             ->label('Ngày');
         CRUD::field('start')
+            ->type('datetime')
             ->label('Giờ bắt đầu ngủ');
         CRUD::field('end')
-            ->type('time')
+            ->type('datetime')
             ->label('Giờ thức dậy');
 
         CRUD::field('take_to_sleep_by')->type('enum')->label('Người cho ngủ');

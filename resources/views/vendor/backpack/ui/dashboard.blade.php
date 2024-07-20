@@ -5,18 +5,18 @@
             [
                 'type'        => 'progress',
                 'class'       => 'card text-white bg-info mb-2',
-                'value'       => 'Cữ bú',
-                'description' => '5',
-                'progress'    => 57, // integer
-                'hint'        => '3 cữ bú nữa mới đủ tiêu chuẩn ngày',
+                'value'       => 'Cữ bú trong ngày - tổng số ml',
+                'description' => sprintf('%s cữ - %s ml', $totalEats, $totalAmount),
+                'progress'    => $totalEats / $standardEat * 100, // integer
+                'hint'        => $eatMessage,
             ],
             [
                 'type'        => 'progress',
                 'class'       => 'card text-white bg-success mb-2',
                 'value'       => 'Tổng thời gian ngủ',
-                'description' => '10h',
-                'progress'    => 57, // integer
-                'hint'        => 'Cần ngủ thêm 6h nữa',
+                'description' => sprintf('%s hours', $totalSleepHours),
+                'progress'    => $totalSleepHours / $standardSleepHours * 100, // integer
+                'hint'        => $sleepMessage,
             ],
             [
                 'type'        => 'progress',

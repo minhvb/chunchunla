@@ -123,4 +123,7 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'standard_eats' => 8,
+    'standard_eat_amount' => 900,
+    'standard_sleep_hours' => 16
 ];

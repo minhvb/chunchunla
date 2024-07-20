@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 // --------------------------
@@ -19,4 +20,5 @@ Route::group([
     Route::crud('eat', 'EatCrudController');
     Route::crud('sleep', 'SleepCrudController');
     Route::crud('user', 'UserCrudController');
+    Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('chun.dashboard');
 }); // this should be the absolute last line of this file

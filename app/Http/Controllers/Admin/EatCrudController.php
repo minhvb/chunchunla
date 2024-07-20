@@ -80,10 +80,10 @@ class EatCrudController extends CrudController
             ->type('date')
             ->label('Ngày');
         CRUD::field('start')
-            ->type('time')
+            ->type('datetime')
             ->label('Giờ bắt đầu cho ăn');
         CRUD::field('end')
-            ->type('time')
+            ->type('datetime')
             ->label('Giờ kết thúc cho ăn');
 
         /**
